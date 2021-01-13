@@ -53,7 +53,7 @@ The implementation of expression templates is straightforward and compact, utili
     * Multithreading is fully supported by all operations that can benefit from it, and can provide a substantial performance boost, limited only by the number of available hardware threads. This option is especially suitable for high-performance computing systems.
 * **Lightweight:**
     * Only ~370 lines of code, or ~630 lines with multithreading enabled (excluding comments and blank lines).
-    * Single header file: simply `#include <matrix.hpp>`, and you're done.
+    * Single header file: simply `#include "matrix.hpp"`, and you're done.
     * Header-only: no need to install or build the library.
     * Self-contained: no external requirements or dependencies. Works with any C++17-compliant compiler.
 * **Easy to use:**
@@ -83,7 +83,7 @@ The implementation of expression templates is straightforward and compact, utili
 To use the matrix class template, simply include the header file:
 
 ```cpp
-#include <matrix.hpp>
+#include "matrix.hpp"
 ```
 
 The contents of the header file belong to the namespace `matrices`, so they will not interfere with anything in the global namespace. The matrix class template itself is called `matrices::matrix<T>`. It is recommended to employ a `using` statement:
